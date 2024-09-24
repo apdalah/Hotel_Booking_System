@@ -1,0 +1,18 @@
+# User Manual - Library Management System
+
+1. How to Add a Book:
+   - Choose option 1 from the main menu.
+   - Enter the book title and author name.
+
+2. How to Borrow a Book:
+   - Choose option 2 from the main menu.
+   - Enter the title of the book you want to borrow.
+   - Enter your name.
+
+3. How to Return a Book:
+   - Choose option 3 from the main menu.
+   - Enter the title of the book you want to return.
+
+4. How to Search for Books:
+   - Choose option 5 from the main menu.
+   - Enter part of the book title or author name to search.

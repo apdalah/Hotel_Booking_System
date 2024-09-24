@@ -1,0 +1,6 @@
+# To-Do List
+
+1. Add a login system for users.
+2. Add book categories and genres.
+3. Implement a graphical user interface (GUI).
+4. Add book recommendations based on user history.

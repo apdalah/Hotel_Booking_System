@@ -1,0 +1,68 @@
+# Code Documentation - Library Management System
+
+## Variables:
+1. `books` (list):
+   - Stores all book data in the library. Each book is represented as a dictionary containing:
+     - `title`: The title of the book (string).
+     - `author`: The author of the book (string).
+     - `available`: A boolean indicating if the book is available for borrowing.
+
+2. `borrowers` (list):
+   - Stores the information of users who borrowed books. Each entry is a dictionary containing:
+     - `title`: The title of the borrowed book.
+     - `borrower`: The name of the user who borrowed the book.
+
+---
+
+## Functions:
+
+1. `load_books()`: 
+   - Reads the `books.txt` file and loads all books into the `books` list.
+   - If the file does not exist, it prints a message and the system will create a new file on save.
+
+2. `save_books()`: 
+   - Writes the current list of books from the `books` list to `books.txt`.
+   - Each book is saved in the format: `Title - Author - Available/Not Available`.
+
+3. `add_book(title, author)`:
+   - Adds a new book to the `books` list with the given title and author.
+   - The book is initialized as available.
+   - Saves the updated book list to the `books.txt` file.
+
+4. `borrow_book(title)`:
+   - Searches for a book by its title in the `books` list.
+   - If the book is available, it marks the book as borrowed, saves the changes to `books.txt`, and records the borrower in `borrowers.txt`.
+   - If the book is not available or not found, it prints an appropriate message.
+
+5. `return_book(title)`:
+   - Searches for a borrowed book by title in the `books` list.
+   - If the book is found as borrowed, it marks it as available and saves the updated state to `books.txt`.
+
+6. `search_books(query)`:
+   - Searches for books in the `books` list by title or author.
+   - The search is case-insensitive and returns any book that contains the query string in either the title or author fields.
+
+7. `display_books()`:
+   - Displays all books in the library with their availability status (Available/Not Available).
+
+8. `load_borrowers()`:
+   - Reads the `borrowers.txt` file and loads all borrower data into the `borrowers` list.
+
+9. `save_borrowers()`:
+   - Saves the current list of borrowers to `borrowers.txt` in the format: `Book Title - Borrower Name`.
+
+10. `display_borrowers()`:
+   - Displays all the current borrowers and the books they have borrowed.
+
+11. `valid_input(prompt)`:
+   - Prompts the user for input and ensures that the input is not empty. If empty, it prompts the user again until valid input is provided.
+
+---
+
+## Main Flow (`main.py`):
+- The `main()` function is the entry point of the program. It handles user interactions through a menu-driven interface. 
+- Key steps:
+   - Loads books and borrowers at the start using `load_books()` and `load_borrowers()`.
+   - Presents the user with menu options to add, borrow, return, and search books, and to view borrowers.
+   - Based on user input, it calls the relevant functions to perform the actions.
+   - The loop continues until the user selects "Exit".

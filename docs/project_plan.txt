@@ -1,0 +1,12 @@
+# Project Plan - Library Management System
+
+1. Features to be developed:
+   - Add books to the library.
+   - Borrow and return books.
+   - Save and load books from a text file.
+   - Track borrowers.
+
+2. Future Ideas:
+   - Add a user login system.
+   - Implement a GUI interface.
+   - Add book categories and genres.

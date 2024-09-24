@@ -1,0 +1,10 @@
+# Changelog
+
+v1.0 - Initial Release:
+   - Added basic features: add book, borrow book, return book, display books.
+   - Implemented file handling for saving and loading books.
+   - Added search functionality for books.
+
+v1.1:
+   - Added borrower tracking system.
+   - Improved input validation.
